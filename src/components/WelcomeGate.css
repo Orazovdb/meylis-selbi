@@ -1,0 +1,98 @@
+.welcome-gate {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5rem;
+}
+
+.welcome-gate-backdrop {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		165deg,
+		rgba(45, 34, 48, 0.92) 0%,
+		rgba(122, 51, 71, 0.55) 45%,
+		rgba(250, 246, 247, 0.35) 100%
+	);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+}
+
+.welcome-gate-card {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	max-width: 22rem;
+	padding: 2.25rem 1.75rem;
+	text-align: center;
+	background: var(--color-bg-card);
+	border: 1px solid var(--color-border);
+	border-radius: 12px;
+	box-shadow: 0 20px 50px var(--color-shadow);
+}
+
+.welcome-gate-eyebrow {
+	margin: 0 0 0.5rem;
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: var(--color-text-muted);
+}
+
+.welcome-gate-names {
+	margin: 0 0 1.75rem;
+	font-family: "Great Vibes", cursive;
+	font-size: clamp(2.25rem, 8vw, 3rem);
+	font-weight: 400;
+	line-height: 1.25;
+	color: var(--color-text);
+}
+
+.welcome-gate-amp-wrapper {
+	margin: 0;
+}
+
+.welcome-gate-amp {
+	display: inline-block;
+	margin: 0 0.35em;
+	font-size: 0.65em;
+	opacity: 0.85;
+}
+
+.welcome-gate-btn {
+	width: 100%;
+	padding: 0.95rem 1.25rem;
+	margin: 0;
+	border: none;
+	border-radius: 9999px;
+	font-family: inherit;
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #fff;
+	background: var(--color-accent);
+	cursor: pointer;
+	transition:
+		background 0.2s,
+		transform 0.15s;
+}
+
+.welcome-gate-btn:hover {
+	background: var(--color-dark);
+}
+
+.welcome-gate-btn:active {
+	transform: scale(0.98);
+}
+
+.welcome-gate-hint {
+	margin: 1rem 0 0;
+	font-size: 0.78rem;
+	font-weight: 400;
+	color: var(--color-text-muted);
+}

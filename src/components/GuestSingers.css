@@ -1,0 +1,113 @@
+.guest-singers-section {
+	padding: 4rem 1.5rem;
+	background: var(--color-bg-soft);
+	color: var(--color-text);
+}
+
+.guest-singers-inner {
+	max-width: 480px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.guest-singers-icon-wrap {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+	color: var(--color-accent);
+}
+
+.guest-singers-icon {
+	width: 2.25rem;
+	height: 2.25rem;
+	opacity: 0.85;
+}
+
+.guest-singers-title {
+	margin: 0 0 0.75rem;
+	font-family: "Great Vibes", cursive;
+	font-size: clamp(2.25rem, 7vw, 3rem);
+	font-weight: 400;
+	line-height: 1.2;
+	color: var(--color-text);
+}
+
+.guest-singers-intro {
+	margin: 0 0 1.5rem;
+	font-size: clamp(0.9rem, 2.2vw, 1rem);
+	font-weight: 400;
+	line-height: 1.6;
+	color: var(--color-text-muted);
+}
+
+.guest-singers-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
+}
+
+.guest-singers-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem 1.25rem;
+	background: var(--color-bg-card);
+	border: 1px solid var(--color-border);
+	border-radius: 8px;
+	text-align: left;
+	transition: border-color 0.2s;
+}
+
+.guest-singers-photo-wrap {
+	flex-shrink: 0;
+	width: 4.5rem;
+	height: 5rem;
+	overflow: hidden;
+	border: 2px solid var(--color-border);
+	background: var(--color-bg-soft);
+}
+
+.guest-singers-photo {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.guest-singers-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	flex: 1;
+	min-width: 0;
+	text-align: left;
+}
+
+.guest-singers-item:not(:has(.guest-singers-photo-wrap)) {
+	flex-direction: column;
+	text-align: center;
+}
+
+.guest-singers-item:not(:has(.guest-singers-photo-wrap)) .guest-singers-text {
+	text-align: center;
+}
+
+.guest-singers-item:hover {
+	border-color: var(--color-accent-light);
+}
+
+.guest-singers-name {
+	font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+	font-weight: 600;
+	color: var(--color-text);
+}
+
+.guest-singers-note {
+	font-size: 0.85rem;
+	color: var(--color-text-muted);
+	line-height: 1.4;
+}

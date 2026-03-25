@@ -1,0 +1,75 @@
+:root {
+	font-family: "Lora", Georgia, serif;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #2e1e2e;
+	background-color: #faf6f7;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Красочная палитра (rose) */
+	--color-bg: #faf6f7;
+	--color-bg-soft: #f5eef0;
+	--color-bg-card: #fffbfc;
+	--color-accent: #7a3347;
+	--color-accent-light: #b07080;
+	--color-accent-warm: #c4909a;
+	--color-text: #2e1e2e;
+	--color-text-muted: #7a5a6a;
+	--color-border: rgba(139, 58, 74, 0.12);
+	--color-shadow: rgba(139, 58, 74, 0.08);
+	--color-heart: rgba(139, 58, 74, 0.4);
+	--color-dark: #2d2230;
+	--color-dark-alt: #2d2230;
+	--color-gold: #c4909a;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+	font-family: "Lora", Georgia, serif;
+	font-weight: 400;
+	background: var(--color-bg);
+}
+
+html {
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-accent-light) transparent;
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-accent-light);
+	border-radius: 2px;
+}
+
+#root {
+	min-height: 100vh;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+button {
+	font-family: inherit;
+}

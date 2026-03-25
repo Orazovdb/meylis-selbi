@@ -1,0 +1,104 @@
+.invitation-content {
+	min-height: 100vh;
+	background: var(--color-bg);
+}
+
+.invitation-footer {
+	padding: 2.5rem 1.5rem 3rem;
+	text-align: center;
+	background: var(--color-dark);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.invitation-footer-names {
+	margin: 0;
+	font-family: "Great Vibes", cursive;
+	font-size: clamp(1.8rem, 5vw, 2.5rem);
+	font-weight: 400;
+	line-height: 1.2;
+	color: rgba(255, 255, 255, 0.95);
+}
+
+.invitation-footer-date {
+	margin: 0.5rem 0 0;
+	font-size: clamp(0.85rem, 2vw, 0.95rem);
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Organizer ── */
+
+.invitation-footer-organizer {
+	padding-top: 2rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.invitation-footer-organizer-label {
+	margin: 0 0 0.75rem;
+	font-size: clamp(0.7rem, 1.8vw, 0.8rem);
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.invitation-footer-organizer-phones {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem 1.5rem;
+}
+
+.invitation-footer-phone {
+	font-size: clamp(0.9rem, 2vw, 1rem);
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.invitation-footer-phone:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+.invitation-footer-instagram {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin-top: 1rem;
+	font-size: clamp(0.8rem, 2vw, 0.9rem);
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.invitation-footer-instagram:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+.invitation-footer-ig-icon {
+	width: 1rem;
+	height: 1rem;
+}
+
+/* ── Logo ── */
+
+.invitation-footer-logo {
+	display: block;
+	height: 50px;
+	width: auto;
+	max-width: 160px;
+	object-fit: contain;
+	margin: 2rem auto 0;
+	opacity: 0.7;
+}
+
+/* ── Rose theme ── */
+.invitation-footer {
+	background: var(--color-dark);
+}
+
+.invitation-footer-organizer {
+	border-top-color: rgba(196, 144, 154, 0.2);
+}

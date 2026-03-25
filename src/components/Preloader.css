@@ -1,0 +1,77 @@
+.preloader {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #faf6f7;
+}
+
+.preloader-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.preloader-date {
+	margin: 0;
+	font-size: clamp(0.75rem, 2vw, 0.85rem);
+	font-weight: 400;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #2e1e2e;
+	opacity: 0.5;
+}
+
+/* ── Spinner ── */
+
+.preloader-spinner {
+	width: 3.5rem;
+	height: 3.5rem;
+	color: #2e1e2e;
+}
+
+.preloader-ring {
+	width: 100%;
+	height: 100%;
+	animation: preloader-rotate 1.4s linear infinite;
+}
+
+.preloader-ring-arc {
+	animation: preloader-dash 1.4s ease-in-out infinite;
+}
+
+@keyframes preloader-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes preloader-dash {
+	0% {
+		stroke-dasharray: 6 120;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 60 120;
+		stroke-dashoffset: -20;
+	}
+	100% {
+		stroke-dasharray: 6 120;
+		stroke-dashoffset: -126;
+	}
+}
+
+/* ── Loading text ── */
+
+.preloader-loading {
+	margin: 0;
+	font-size: 0.65rem;
+	font-weight: 400;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	color: #2e1e2e;
+	opacity: 0.35;
+}

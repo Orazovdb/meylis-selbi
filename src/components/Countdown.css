@@ -1,0 +1,73 @@
+.countdown-section {
+	padding: 3rem 1.5rem 3rem;
+	text-align: center;
+	background: var(--color-bg);
+	color: var(--color-text);
+}
+
+.countdown-title {
+	margin: 0 0 2.5rem;
+	font-family: "Great Vibes", cursive;
+	font-size: clamp(2rem, 7vw, 3rem);
+	font-weight: 400;
+	line-height: 1.2;
+	color: var(--color-text);
+}
+
+/* ── Grid: 4 columns ── */
+
+.countdown-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.75rem;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.countdown-cell {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 1.25rem 0.5rem;
+	border: 1px solid var(--color-border);
+	background: var(--color-bg-card);
+	transition: border-color 0.3s;
+}
+
+.countdown-cell:hover {
+	border-color: var(--color-gold);
+}
+
+.countdown-value {
+	font-variant-numeric: tabular-nums;
+	font-size: clamp(1.8rem, 5vw, 2.4rem);
+	font-weight: 300;
+	color: var(--color-text);
+	line-height: 1;
+	letter-spacing: 0.04em;
+}
+
+.countdown-label {
+	font-size: clamp(0.6rem, 1.5vw, 0.7rem);
+	font-weight: 500;
+	color: var(--color-text-muted);
+	text-transform: lowercase;
+	letter-spacing: 0.1em;
+}
+
+/* ── Small screens ── */
+
+@media (max-width: 360px) {
+	.countdown-grid {
+		gap: 0.5rem;
+	}
+
+	.countdown-cell {
+		padding: 1rem 0.25rem;
+	}
+
+	.countdown-value {
+		font-size: 1.5rem;
+	}
+}
