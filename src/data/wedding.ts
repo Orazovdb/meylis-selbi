@@ -89,17 +89,6 @@ export const weddingData = {
 			description: ""
 		}
 	],
-	dresscode: {
-		description:
-			"Merasimimiziň stilini goldasaňyz, biziň üçin uly şatlyk bolar",
-		maleLabel: "Erkek üçin",
-		maleHint: "Klassik kostýum",
-		femaleLabel: "Aýal üçin",
-		femaleHint: "Aksamlyk koýnek",
-		paletteLabel: "Maslahat berilýän reňkler",
-		palette: ["#1a1a1a", "#2c3e50", "#5b2333", "#8a7e6b", "#c4b39a", "#d4c5b0"],
-		note: "Aýdyň reňk Gyz üçin saklandy — oňa ýüz tutmaňy haýyş edýäris"
-	},
 	/** Aýdym saz — tüýe gelýän aýdymçylar (adlary wedding.ts-da üýtgediň) */
 	guestSingersTitle: "Toýuň bagşylary",
 	guestSingers: [
